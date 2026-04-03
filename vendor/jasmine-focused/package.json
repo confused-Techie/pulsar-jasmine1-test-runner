@@ -23,7 +23,8 @@
   "homepage": "http://atom.github.io/jasmine-focused",
   "scripts": {
     "prepublish": "grunt clean lint coffee",
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt clean lint coffee"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

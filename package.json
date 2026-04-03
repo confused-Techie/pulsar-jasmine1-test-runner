@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "confused-Techie",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jasmine-focused": "file:vendor/jasmine-focused"
+  }
 }
