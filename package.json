@@ -2,7 +2,7 @@
   "name": "pulsar-jasmine1-test-runner",
   "version": "1.0.0",
   "description": "Run your Pulsar Package tests using the original Atom Jasmine v1 test runner. Extracted from Pulsar.",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
