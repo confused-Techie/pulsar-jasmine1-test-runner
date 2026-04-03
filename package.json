@@ -10,5 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "jasmine-focused": "file:vendor/jasmine-focused"
+  },
+  "peerDependencies": {
+    "electron": "*"
   }
 }
