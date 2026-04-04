@@ -15,6 +15,10 @@ Pulled from `pulsar-edit/pulsar/spec/helpers/jasmine-list-reporter.js`
 
 Pulled from `pulsar-edit/pulsar/spec/helpers/jasmine1-atom-reporter.js`
 
+### jasmine1-spec-helper
+
+Pulled from `pulsar-edit/pulsar/spec/helpers/jasmine1-spec-helper.js`
+
 ### delegated-listener
 
 Pulled from `pulsar-edit/pulsar/src/delegated-listener.js`
