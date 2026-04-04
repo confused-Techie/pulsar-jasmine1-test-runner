@@ -9,7 +9,12 @@
   "author": "confused-Techie",
   "license": "MIT",
   "dependencies": {
-    "jasmine-focused": "file:vendor/jasmine-focused"
+    "jasmine-focused": "file:vendor/jasmine-focused",
+    "fs-plus": "^3.1.1",
+    "temp": "0.9.4",
+    "grim": "2.0.3",
+    "event-kit": "^2.5.3",
+    "underscore-plus": "^1.7.0"
   },
   "peerDependencies": {
     "electron": "*"
