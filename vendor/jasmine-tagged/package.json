@@ -18,7 +18,8 @@
   },
   "scripts": {
     "prepublish": "grunt clean lint coffee",
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt clean lint coffee"
   },
   "bin": {
     "jasmine-tagged": "./bin/jasmine-tagged"
