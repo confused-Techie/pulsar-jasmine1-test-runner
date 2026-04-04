@@ -31,7 +31,7 @@ if (isWindowUndefined) {
   delete global.window;
 }
 require("./async-callback");
-require("jasmine-reporters");
+require("../../jasmine-reporters");
 var nodeReporters = require('./reporter').jasmineNode;
 jasmine.TerminalVerboseReporter = nodeReporters.TerminalVerboseReporter;
 jasmine.TerminalReporter = nodeReporters.TerminalReporter;
