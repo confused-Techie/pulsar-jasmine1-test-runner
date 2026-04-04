@@ -14,7 +14,6 @@
     "find-parent-dir": "^0.3.0",
     "fs-plus": "^3.1.1",
     "grim": "2.0.3",
-    "jasmine-focused": "file:./vendor/jasmine-focused",
     "temp": "0.9.4",
     "underscore-plus": "^1.7.0"
   },

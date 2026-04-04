@@ -1,4 +1,4 @@
-jasmine = require 'jasmine-focused'
+jasmine = require "../jasmine-focused"
 
 env = jasmine.getEnv()
 

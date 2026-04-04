@@ -1,7 +1,7 @@
 (function() {
   var env, findTags, includeSpecsWithoutTags, includedTags, jasmine, originalFilter;
 
-  jasmine = require('jasmine-focused');
+  jasmine = require("../jasmine-focused");
 
   env = jasmine.getEnv();
 
