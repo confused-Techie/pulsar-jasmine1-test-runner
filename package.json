@@ -27,5 +27,17 @@
   "peerDependencies": {
     "electron": "*",
     "@pulsar-edit/pathwatcher": "*"
-  }
+  },
+  "files": [
+    "./lib/*",
+    "./vendor/jasmine-focused/lib/*",
+    "./vendor/jasmine-focused/LICENSE.md",
+    "./vendor/jasmine-json/lib/*",
+    "./vendor/jasmine-json/LICENSE.md",
+    "./vendor/jasmine-node/lib/*",
+    "./vendor/jasmine-node/LICENSE",
+    "./vendor/jasmine-tagged/lib/jasmine-tagged.js",
+    "./vendor/jasmine-tagged/LICENSE.md",
+    "./vendor/pulsar/*"
+  ]
 }
