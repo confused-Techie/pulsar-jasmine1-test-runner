@@ -10,7 +10,7 @@
 let specDirectory, specPackageName, specPackagePath, specProjectPath;
 require('./jasmine-singleton');
 require('../../src/window');
-require('../../vendor/jasmine-jquery');
+require("./jasmine-jquery.js");
 const path = require('path');
 const _ = require('underscore-plus');
 const fs = require('fs-plus');
