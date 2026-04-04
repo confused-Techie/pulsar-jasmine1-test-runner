@@ -8,21 +8,21 @@
  * Full docs: https://github.com/decaffeinate/decaffeinate/blob/main/docs/suggestions.md
  */
 let specDirectory, specPackageName, specPackagePath, specProjectPath;
-require('./jasmine-singleton');
+require("./jasmine-singleton.js");
 require('../../src/window');
 require("./jasmine-jquery.js");
-const path = require('path');
-const _ = require('underscore-plus');
-const fs = require('fs-plus');
-const Grim = require('grim');
+const path = require("node:path");
+const _ = require("underscore-plus");
+const fs = require("fs-plus");
+const Grim = require("grim");
 const pathwatcher = require('@pulsar-edit/pathwatcher');
 const FindParentDir = require('find-parent-dir');
-const {CompositeDisposable} = require('event-kit');
+const {CompositeDisposable} = require("event-kit");
 
 const TextEditor = require('../../src/text-editor');
 const TextEditorElement = require('../../src/text-editor-element');
 const TextMateLanguageMode = require('../../src/text-mate-language-mode');
-const {clipboard} = require('electron');
+const {clipboard} = require("electron");
 const {mockDebounce} = require("./mock-debounce.js");
 
 const jasmineStyle = document.createElement('style');
