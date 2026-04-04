@@ -19,6 +19,10 @@ Pulled from `pulsar-edit/pulsar/spec/helpers/jasmine1-atom-reporter.js`
 
 Pulled from `pulsar-edit/pulsar/spec/helpers/jasmine1-spec-helper.js`
 
+## mock-debounce
+
+Pulled from `pulsar-edit/pulsar/spec/helpers/mock-debounce.js`
+
 ### delegated-listener
 
 Pulled from `pulsar-edit/pulsar/src/delegated-listener.js`
@@ -26,6 +30,10 @@ Pulled from `pulsar-edit/pulsar/src/delegated-listener.js`
 ### ipc-helpers
 
 Pulled from `pulsar-edit/pulsar/src/ipc-helpers.js`
+
+### window
+
+Pulled from `pulsar-edit/pulsar/src/window.js`
 
 ### jasmine
 > https://github.com/pulsar-edit/pulsar/blob/v1.131.3/vendor/jasmine.js

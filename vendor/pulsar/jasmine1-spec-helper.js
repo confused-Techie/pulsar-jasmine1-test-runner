@@ -9,21 +9,26 @@
  */
 let specDirectory, specPackageName, specPackagePath, specProjectPath;
 require("./jasmine-singleton.js");
-require('../../src/window');
+require("./window.js");
 require("./jasmine-jquery.js");
 const path = require("node:path");
 const _ = require("underscore-plus");
 const fs = require("fs-plus");
 const Grim = require("grim");
-const pathwatcher = require('@pulsar-edit/pathwatcher');
-const FindParentDir = require('find-parent-dir');
-const {CompositeDisposable} = require("event-kit");
+const pathwatcher = require("@pulsar-edit/pathwatcher");
+const FindParentDir = require("find-parent-dir");
+const { CompositeDisposable } = require("event-kit");
+const { clipboard } = require("electron");
+const { TextEditor } = require("atom");
+const { mockDebounce } = require("./mock-debounce.js");
 
-const TextEditor = require('../../src/text-editor');
-const TextEditorElement = require('../../src/text-editor-element');
-const TextMateLanguageMode = require('../../src/text-mate-language-mode');
-const {clipboard} = require("electron");
-const {mockDebounce} = require("./mock-debounce.js");
+// Instantiate a text editor so we can grab a reference to `TextEditorElement`
+// and `TextMateLanguageMode`
+// From: https://github.com/pulsar-edit/jasmine5-test-runner/blob/main/lib/helpers/atom.js
+let te = new TextEditor();
+let lm = te.getBuffer().getLanguageMode();
+const TextMateLanguageMode = lm.constructor;
+const TextEditorElement = te.element.constructor;
 
 const jasmineStyle = document.createElement('style');
 jasmineStyle.textContent = atom.themes.loadStylesheet(atom.themes.resolveStylesheet('../static/jasmine'));
