@@ -8,6 +8,7 @@
   },
   "author": "confused-Techie",
   "license": "MIT",
+  "atomTestRunner": "./spec/runner.js",
   "dependencies": {
     "event-kit": "^2.5.3",
     "find-parent-dir": "^0.3.0",
