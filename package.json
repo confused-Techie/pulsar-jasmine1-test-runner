@@ -15,7 +15,14 @@
     "fs-plus": "^3.1.1",
     "grim": "2.0.3",
     "temp": "0.9.4",
-    "underscore-plus": "^1.7.0"
+    "underscore-plus": "^1.7.0",
+    "coffee-script": ">=1.0.1",
+    "jasmine-reporters": ">=0.2.0",
+    "requirejs": ">=0.27.1",
+    "walkdir": ">= 0.0.1",
+    "gaze": "~0.3.2",
+    "mkdirp": "~0.3.5",
+    "coffeestack": ">=1 <2"
   },
   "peerDependencies": {
     "electron": "*",
