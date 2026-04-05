@@ -38,6 +38,7 @@ describe('Spies', function () {
     expect(TestClass.someFunction.mostRecentCall.args).toEqual(['bar']);
   });
 
+  // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
   xit('should be possible to call through to the original method, or return a specific result', function() {
     var originalFunctionWasCalled = false;
     var passedArgs;
@@ -96,6 +97,7 @@ describe('Spies', function () {
     expect(originalFunctionWasCalled).toEqual(false);
   });
 
+  // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
   xit('should be possible to call a specified function', function() {
     var originalFunctionWasCalled = false;
     var fakeFunctionWasCalled = false;
@@ -193,6 +195,7 @@ describe('Spies', function () {
   });
 
   describe("createSpyObj", function() {
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("should create an object with a bunch of spy methods when you call jasmine.createSpyObj()", function() {
       var spyObj = jasmine.createSpyObj('BaseName', ['method1', 'method2']);
       expect(spyObj).toEqual({ method1: jasmine.any(Function), method2: jasmine.any(Function)});

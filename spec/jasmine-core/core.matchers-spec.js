@@ -977,6 +977,7 @@ describe("jasmine.Matchers", function() {
         method = jasmine.createSpy("method");
         method({a:"b", c:"d"});
       });
+      // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
       xit("works correctly for positive matches", function () {
         expect(method).toHaveBeenCalledWith(jasmine.objectContaining({a:"b"}));
       });

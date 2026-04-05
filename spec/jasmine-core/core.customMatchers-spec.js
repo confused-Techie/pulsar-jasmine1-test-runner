@@ -46,6 +46,7 @@ describe("Custom Matchers", function() {
     expect(spec2Matcher.matcherForSpec).toBe(jasmine.undefined);
   });
 
+  // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
   xit("should generate messages with the same rules as for regular matchers when this.report() is not called", function() {
     var spec;
     var suite = env.describe('some suite', function() {

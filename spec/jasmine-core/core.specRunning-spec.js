@@ -282,6 +282,7 @@ describe("jasmine spec running", function () {
       expect(block.message).toEqual('message');
     });
 
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("should accept args (latchFunction, timeout)", function() {
       makeWaitsForSpec(latchFunction, 123);
       var block = spec.queue.blocks[1];
@@ -299,6 +300,7 @@ describe("jasmine spec running", function () {
       expect(block.message).toEqual('message');
     });
 
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("should accept args (latchFunction)", function() {
       env.defaultTimeoutInterval = 4321;
       makeWaitsForSpec(latchFunction);
@@ -365,6 +367,7 @@ describe("jasmine spec running", function () {
       expect(spec.results().getItems()[0].message).toEqual('timeout: timed out after 500 msec waiting for my awesome condition');
     });
 
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("fails and skips the rest of the spec if timeout is reached and the latch function hasn't returned true", function() {
       var runsBlockExecuted = false;
       var subsequentSpecRan = false;

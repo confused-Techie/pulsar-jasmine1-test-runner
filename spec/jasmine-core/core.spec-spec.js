@@ -106,6 +106,7 @@ describe('Spec', function () {
       });
     });
 
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("includes log messages, which may contain arbitary objects", function() {
       spec.runs(function() {
         this.log("here's some log message", {key: 'value'}, 123);

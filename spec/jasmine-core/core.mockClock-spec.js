@@ -5,6 +5,7 @@ describe("MockClock", function () {
   });
 
   describe("setTimeout", function () {
+    // NOTE: Skipped due to incompatibility with Pulsar's Jasmine 1.3.1
     xit("should mock the clock when useMock is in a beforeEach", function() {
       var expected = false;
       setTimeout(function() {
