@@ -5,13 +5,13 @@
     jasmine = global.jasmine;
     if (jasmine.TerminalReporter == null) {
       path = require("node:path");
-      jasmineNodePath = require.resolve("../jasmine-node");
+      jasmineNodePath = require.resolve("../../jasmine-node");
       reporterPath = path.join(path.dirname(jasmineNodePath), 'reporter');
       jasmineNode = require(reporterPath).jasmineNode;
       jasmine.TerminalReporter = jasmineNode.TerminalReporter;
     }
   } else {
-    jasmine = require("../jasmine-node");
+    jasmine = require("../../jasmine-node");
   }
 
   setGlobalFocusPriority = function(priority) {

@@ -34,7 +34,7 @@
   },
   "bin": "bin/jasmine-node",
   "preferGlobal": true,
-  "main": "lib/jasmine-node",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node lib/jasmine-node/cli.js spec"
   },
