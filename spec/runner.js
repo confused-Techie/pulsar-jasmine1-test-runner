@@ -1,1 +1,1 @@
-module.exports = require("../lib/createRunner.js")
+module.exports = require("../");

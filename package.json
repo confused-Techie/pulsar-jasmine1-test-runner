@@ -4,7 +4,7 @@
   "description": "Run your Pulsar Package tests using the original Atom Jasmine v1 test runner. Extracted from Pulsar.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "pulsar --test spec"
   },
   "author": "confused-Techie",
   "license": "MIT",
