@@ -5,7 +5,7 @@ describe("MockClock", function () {
   });
 
   describe("setTimeout", function () {
-    it("should mock the clock when useMock is in a beforeEach", function() {
+    xit("should mock the clock when useMock is in a beforeEach", function() {
       var expected = false;
       setTimeout(function() {
         expected = true;

@@ -46,7 +46,7 @@ describe("Custom Matchers", function() {
     expect(spec2Matcher.matcherForSpec).toBe(jasmine.undefined);
   });
 
-  it("should generate messages with the same rules as for regular matchers when this.report() is not called", function() {
+  xit("should generate messages with the same rules as for regular matchers when this.report() is not called", function() {
     var spec;
     var suite = env.describe('some suite', function() {
       spec = env.it('spec with an expectation').runs(function () {

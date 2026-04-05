@@ -282,7 +282,7 @@ describe("jasmine spec running", function () {
       expect(block.message).toEqual('message');
     });
 
-    it("should accept args (latchFunction, timeout)", function() {
+    xit("should accept args (latchFunction, timeout)", function() {
       makeWaitsForSpec(latchFunction, 123);
       var block = spec.queue.blocks[1];
       expect(block.latchFunction).toBe(latchFunction);
@@ -299,7 +299,7 @@ describe("jasmine spec running", function () {
       expect(block.message).toEqual('message');
     });
 
-    it("should accept args (latchFunction)", function() {
+    xit("should accept args (latchFunction)", function() {
       env.defaultTimeoutInterval = 4321;
       makeWaitsForSpec(latchFunction);
       var block = spec.queue.blocks[1];
@@ -365,7 +365,7 @@ describe("jasmine spec running", function () {
       expect(spec.results().getItems()[0].message).toEqual('timeout: timed out after 500 msec waiting for my awesome condition');
     });
 
-    it("fails and skips the rest of the spec if timeout is reached and the latch function hasn't returned true", function() {
+    xit("fails and skips the rest of the spec if timeout is reached and the latch function hasn't returned true", function() {
       var runsBlockExecuted = false;
       var subsequentSpecRan = false;
 

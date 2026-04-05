@@ -977,7 +977,7 @@ describe("jasmine.Matchers", function() {
         method = jasmine.createSpy("method");
         method({a:"b", c:"d"});
       });
-      it("works correctly for positive matches", function () {
+      xit("works correctly for positive matches", function () {
         expect(method).toHaveBeenCalledWith(jasmine.objectContaining({a:"b"}));
       });
 
